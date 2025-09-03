@@ -1,16 +1,13 @@
 import React from "react";
-import { DefaultContainerProps } from "@/types";
+import { ContainerProps } from "@/types";
 
-export const Container: React.FC<DefaultContainerProps> = ({
+export const Container: React.FC<ContainerProps> = ({
   children,
   className = "",
   variant = "default",
   ...rest
 }) => {
-  const classMap: Record<
-    NonNullable<DefaultContainerProps["variant"]>,
-    string
-  > = {
+  const classMap: Record<NonNullable<ContainerProps["variant"]>, string> = {
     default:
       "w-full px-[15px] mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[90%]",
   };

@@ -1,6 +1,6 @@
 import { ButtonProps } from "@/types";
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   children,
   type = "button",
   variant = "primary",
@@ -22,5 +22,3 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;
