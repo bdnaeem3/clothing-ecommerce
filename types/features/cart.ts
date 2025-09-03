@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 
-export interface CheckoutProps extends HTMLAttributes<HTMLDivElement> {
+export interface CartDropdownProps extends HTMLAttributes<HTMLDivElement> {
   items?: any[];
   className?: string;
   onCheckoutClick?: () => void;
